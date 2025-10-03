@@ -4,9 +4,15 @@
 
 // Art pieces - ADD YOUR ART FILES HERE
 const artPieces = [
-    { src: 'assets/art/art1.png', title: 'Art Piece 1' },
-    { src: 'assets/art/art2.png', title: 'Art Piece 2' },
-    { src: 'assets/art/art3.png', title: 'Art Piece 3' },
+    { src: 'assets/art/art1.png', title: 'Gumball? (PIBBY artwork)' },
+    { src: 'assets/art/art2.png', title: 'Kazz (Character Design)' },
+    { src: 'assets/art/art3.png', title: 'Bibble (Character Design)' },
+    { src: 'assets/art/art4.png', title: 'Pibby (AOT Style Recreation)' },
+    { src: 'assets/art/art5.png', title: 'Gumball in... Grannies House?' },
+    { src: 'assets/art/art6.png', title: '"Taking Control"' },
+    { src: 'assets/art/art7.png', title: '"I feel the shift."' },
+    { src: 'assets/art/art8.png', title: 'Pibby and BunBun (Character Design)' },
+    { src: 'assets/art/art9.png', title: 'Its ME! (Character Design)' },
     // Add more art pieces like this:
     // { src: 'assets/art/art4.png', title: 'Art Piece 4' },
 ];
@@ -14,7 +20,7 @@ const artPieces = [
 // Storyboards - ADD YOUR STORYBOARD FOLDERS HERE
 const storyboards = [
     {
-        title: 'Storyboard 1',
+        title: 'NONE AVAILABLE CURRENTLY',
         thumbnail: 'assets/storyboards/storyboard1/thumbnail.png',
         panels: [
             'assets/storyboards/storyboard1/panel1.png',
@@ -23,7 +29,7 @@ const storyboards = [
         ]
     },
     {
-        title: 'Storyboard 2',
+        title: 'NONE AVAILABLE CURRENTLY',
         thumbnail: 'assets/storyboards/storyboard2/thumbnail.png',
         panels: [
             'assets/storyboards/storyboard2/panel1.png',
@@ -45,13 +51,8 @@ const storyboards = [
 const animations = [
     { 
         src: 'assets/animations/animation1.mp4', 
-        title: 'Animation 1',
+        title: 'ROUGH - Gaze of a God (Crystalized)',
         thumbnail: 'assets/animations/animation1_thumb.png'
-    },
-    { 
-        src: 'assets/animations/animation2.mp4', 
-        title: 'Animation 2',
-        thumbnail: 'assets/animations/animation2_thumb.png'
     },
     // Add more animations like this:
     // { 
