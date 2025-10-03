@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KXLEY - Artist & Animator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-lines" id="bgLines"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Panel - Profile Card -->
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="assets/profile.png" alt="KXLEY Profile">
+            </div>
+            
+            <div class="logo">
+                <img src="assets/logo.png" alt="KXLEY Logo">
+            </div>
+            
+            <h2 class="title">Artist + Animator</h2>
+            
+            <p class="description">
+                Creating vibrant worlds through art and animation
+            </p>
+            
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="YOUR_DISCORD_LINK" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/icon_discord.png" alt="Discord">
+                </a>
+                <a href="YOUR_YOUTUBE_LINK" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/icon_youtube.png" alt="YouTube">
+                </a>
+                <a href="YOUR_TWITTER_LINK" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/icon_twitter.png" alt="Twitter">
+                </a>
+                <a href="YOUR_NEWGROUNDS_LINK" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/icons/icon_newgrounds.png" alt="Newgrounds">
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Panel - Content Area -->
+        <div class="content-card">
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-btn active" data-tab="bio">
+                    <img src="assets/buttons/btn_bio.png" alt="Bio" class="btn-inactive">
+                    <img src="assets/buttons/btn_bio_active.png" alt="Bio" class="btn-active">
+                </button>
+                <button class="tab-btn" data-tab="art">
+                    <img src="assets/buttons/btn_art.png" alt="Art" class="btn-inactive">
+                    <img src="assets/buttons/btn_art_active.png" alt="Art" class="btn-active">
+                </button>
+                <button class="tab-btn" data-tab="storyboard">
+                    <img src="assets/buttons/btn_storyboard.png" alt="Storyboard" class="btn-inactive">
+                    <img src="assets/buttons/btn_storyboard_active.png" alt="Storyboard" class="btn-active">
+                </button>
+                <button class="tab-btn" data-tab="animation">
+                    <img src="assets/buttons/btn_animation.png" alt="Animation" class="btn-inactive">
+                    <img src="assets/buttons/btn_animation_active.png" alt="Animation" class="btn-active">
+                </button>
+            </div>
+
+            <!-- Content Sections -->
+            <div class="content-area">
+                <!-- Bio Section -->
+                <div class="tab-content active" id="bio">
+                    <h2>Bio</h2>
+                    <p>
+                        This is where your bio text goes. Edit this section to tell your story,
+                        share your artistic journey, and let people know what drives your creativity.
+                        You can write multiple paragraphs here!
+                    </p>
+                </div>
+
+                <!-- Art Section -->
+                <div class="tab-content" id="art">
+                    <div class="grid" id="artGrid">
+                        <!-- Art items will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <!-- Storyboard Section -->
+                <div class="tab-content" id="storyboard">
+                    <div class="grid" id="storyboardGrid">
+                        <!-- Storyboard items will be dynamically loaded here -->
+                    </div>
+                </div>
+
+                <!-- Animation Section -->
+                <div class="tab-content" id="animation">
+                    <div class="animation-grid" id="animationGrid">
+                        <!-- Animation items will be dynamically loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Art -->
+    <div class="lightbox" id="artLightbox">
+        <button class="close-btn" id="closeArt">&times;</button>
+        <button class="nav-btn prev" id="prevArt">&lt;</button>
+        <img src="" alt="Art" id="lightboxArtImage">
+        <button class="nav-btn next" id="nextArt">&gt;</button>
+    </div>
+
+    <!-- Lightbox for Storyboard -->
+    <div class="lightbox" id="storyboardLightbox">
+        <button class="close-btn" id="closeStoryboard">&times;</button>
+        <button class="nav-btn prev" id="prevPanel">&lt;</button>
+        <div class="storyboard-viewer">
+            <img src="" alt="Panel" id="lightboxPanelImage">
+            <p class="panel-counter" id="panelCounter">Panel 1 of 1</p>
+        </div>
+        <button class="nav-btn next" id="nextPanel">&gt;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
