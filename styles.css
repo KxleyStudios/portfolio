@@ -11,36 +11,30 @@ body {
     background-color: #1a1a1a;
 }
 
-/* Animated Background */
+/* Animated Background - Updated to match your vision */
 .bg-lines {
     position: fixed;
-    top: -100px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% + 200px);
+    height: 100%;
     z-index: 0;
     pointer-events: none;
-    background-image: 
+    background: 
         repeating-linear-gradient(
             45deg,
-            transparent,
-            transparent 50px,
-            #32a875 50px,
-            #32a875 52px
-        ),
-        repeating-linear-gradient(
-            -45deg,
-            transparent,
-            transparent 50px,
-            #1f7368 50px,
-            #1f7368 52px
+            #1f7368,
+            #1f7368 30px,
+            #32a875 30px,
+            #32a875 60px
         );
-    animation: scrollBg 20s linear infinite;
+    animation: scrollBg 30s linear infinite;
+    background-size: 200% 200%;
 }
 
 @keyframes scrollBg {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(100px); }
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
 }
 
 /* Main Container */
